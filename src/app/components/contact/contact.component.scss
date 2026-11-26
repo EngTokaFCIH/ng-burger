@@ -1,0 +1,41 @@
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 450px;
+  .input{
+    width: 100%;
+    row-gap: 10px ;
+    label{
+      font-size: 25px;
+    }
+    input,
+    textarea{
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    input{
+      height: 40px;
+    }
+
+    textarea{
+      resize: none;
+      height: 150px;
+    }
+  }
+
+  button{
+    border: 1px solid #fff;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+

@@ -1,0 +1,15 @@
+header{
+  flex: 1;
+}
+
+.content img{
+  width: 25%;
+}
+
+.content h1{
+  font-size: 70px;
+}
+
+.content h1+p{
+  font-size: 25px;
+}
