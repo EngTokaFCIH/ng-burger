@@ -1,7 +1,15 @@
-section h2{
+@use './../../../../public/assets/css/scss/abstract/' as* ;
+
+section {
+  h2{
   font-size: 60px;
+  @include respond(350){
+    font-size: 45px;
+
+  }
+  }
+ .row{
+    row-gap: 40px;
+  }
 }
 
-section .row{
-  row-gap: 40px;
-}

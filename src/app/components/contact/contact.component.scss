@@ -1,3 +1,5 @@
+@use './../../../../public/assets/css/scss/abstract/' as* ;
+
 form{
   display: flex;
   align-items: center;
@@ -5,11 +7,26 @@ form{
   flex-direction: column;
   row-gap: 20px;
   width: 450px;
+  @include respond(350){
+    width: 280px;
+  }
+   @include respond(650){
+    width: 350px;
+  }
+   @include respond(1050){
+    width: 450px;
+  }
   .input{
     width: 100%;
     row-gap: 10px ;
     label{
       font-size: 25px;
+      @include respond(350){
+        font-size: 20px;
+      }
+      @include respond(1050){
+        font-size: 25px;
+      }
     }
     input,
     textarea{

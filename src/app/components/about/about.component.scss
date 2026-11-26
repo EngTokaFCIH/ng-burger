@@ -1,24 +1,49 @@
-img{
-  border-radius: 20px;
-}
+@use './../../../../public/assets/css/scss/abstract/' as* ;
 
-h2{
-  font-size: 60px;
-}
-
-p:nth-of-type(1){
-  font-size: 27px;
-}
-
-p:nth-of-type(2){
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 2;
-  span{
-    background-color: #ff894f;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
+.item{
+  img{
+    border-radius: 20px;
   }
+  h2{
+    font-size: 60px;
+    @include respond(350){
+      font-size: 50px;
+    }
+  }
+
+  p{
+    &:nth-of-type(1){
+      font-size: 27px;
+      @include respond(350){
+        font-size:20px;
+      }
+    }
+    &:nth-of-type(2){
+      font-size: 18px;
+      letter-spacing: 2px;
+      line-height: 2;
+
+      @include respond(350){
+        line-height: 1.8;
+        font-size: 16px;
+      }
+      @include respond(650){
+        line-height: 2;
+        font-size: 18 px;
+      }
+      span{
+        background-color: #ff894f;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+   }
+
+  }
+
+
+
 }
+
+
 

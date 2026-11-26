@@ -1,9 +1,52 @@
+@use './../../../../public/assets/css/scss/abstract/' as* ;
+
 nav{
   width: 100%;
   border-bottom: 2px solid #fff;
+
+
+  .navbar-brand{
+    display: block;
+    width: 10%;
+    @include respond(350){
+      width: 25%;
+    }
+    @include respond(450){
+      width: 20%;
+    }
+    @include respond(850){
+      width: 15%;
+    }
+    @include respond(1050){
+      width: 10%;
+    }
+  }
+  .navbar-toggler{
+    @include respond(350){
+      width: 50px;
+      height: 40px;
+      border: 1px solid #fff;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+    }
+    @include respond(1050){
+      display: none;
+    }
+    span{
+      height: 2px;
+      width: 100%;
+      display: block;
+      background-color: #fff;
+    }
+  }
+  .navbar-nav{
+    @include respond(350){
+      text-align: center;
+    }
+  }
+
+
 }
 
-.navbar .navbar-brand{
-  display: block;
-  width: 10%;
-}
